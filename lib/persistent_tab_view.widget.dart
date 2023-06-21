@@ -93,6 +93,7 @@ class PersistentTabView extends PersistentTabViewBase {
     this.hideNavigationBarWhenKeyboardShows = true,
     final bool popAllScreensOnTapOfSelectedTab = true,
     final bool popAllScreensOnTapAnyTabs = false,
+    final PopActionScreensType popActionScreens = PopActionScreensType.all,
     this.backgroundColor = CupertinoColors.white,
     final CustomWidgetRouteAndNavigatorSettings routeAndNavigatorSettings =
         const CustomWidgetRouteAndNavigatorSettings(),
@@ -126,6 +127,7 @@ class PersistentTabView extends PersistentTabViewBase {
           hideNavigationBar: hideNavigationBar,
           popAllScreensOnTapOfSelectedTab: popAllScreensOnTapOfSelectedTab,
           popAllScreensOnTapAnyTabs: popAllScreensOnTapAnyTabs,
+          popActionScreens: popActionScreens,
           screenTransitionAnimation: screenTransitionAnimation,
           isCustomWidget: true,
           decoration: const NavBarDecoration(),
